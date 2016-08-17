@@ -7,9 +7,9 @@ class env::std::install_g5ksubnets {
   }
   package {
     "g5k-subnets":
-      ensure  => installed,
+      ensure   => installed,
       provider => gem,
       source   => "/tmp/g5k-subnets.gem",
-      require  =>  Exec["retrieve_g5ksubnets"];
+      require  =>  [Exec["retrieve_g5ksubnets"],Package['ruby']];
   }
 }
