@@ -36,5 +36,5 @@ class env::big ( $parent_parameters = {} ){
   # Config OpenMPI
   class { 'env::big::install_openmpi': }
   # perftools
-  class { 'env::std::configure_perftools' }
+  class { 'env::std::configure_perftools': }
 }
