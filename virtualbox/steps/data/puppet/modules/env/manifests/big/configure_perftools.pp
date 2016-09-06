@@ -1,4 +1,4 @@
-class env::std::configure_perftools {
+class env::big::configure_perftools {
 
     package {
         "linux-tools":
